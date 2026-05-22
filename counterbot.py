@@ -58,7 +58,7 @@ async def total(message: Message):
     
     # Проверка доступа
     if user_id not in ALLOWED_USERS:
-        await message.answer("7303857790")
+        await message.answer("Не удалось извлечь сумму")
         return
 
     total_sum = user_totals.get(user_id, 0)
